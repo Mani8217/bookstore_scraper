@@ -1,0 +1,34 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+static/
+*.db
+*.sqlite3
+
+# Scrapy specific
+.scrapy/
+*.csv
+*.json
+*.xml
+
+# Virtual environment
+.venv/
+
+
+# IDE specific (if you're using PyCharm, VSCode, etc.)
+.idea/
+.vscode/
+
+# Python bytecode
+*.py[cod]
+*$py.class
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db

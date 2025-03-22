@@ -2,6 +2,8 @@
 
 This project consists of a Django backend, a Scrapy-based web scraper, and a React frontend. It scrapes book data from [Books to Scrape](https://books.toscrape.com/), stores it in a MySQL database, and displays it on the frontend.
 
+[My Trello Board][https://trello.com/b/s0BTyezj/project-iii]
+
 ## Project Structure
 
 ```
@@ -74,3 +76,6 @@ npm run dev  # Starts React development server
 ## License
 This project is open-source and free to use.
 
+
+
+[def]: https://trello.com/b/s0BTyezj/project-iii

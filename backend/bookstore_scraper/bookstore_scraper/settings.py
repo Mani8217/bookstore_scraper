@@ -89,19 +89,16 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
-# Set settings whose default value is deprecated to a future-proof value
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
 
-# تنظیمات مربوط به پیپلاین‌ها
 ITEM_PIPELINES = {
     'bookstore_scraper.pipelines.MySQLPipeline': 1,  # پیپلاین برای ذخیره اطلاعات در MySQL
 }
 
-# تنظیمات مربوط به اتصال به MySQL
-MYSQL_HOST = 'localhost'  # آدرس هاست MySQL
-MYSQL_DATABASE = 'bookstore_scraper'  # نام دیتابیس
-MYSQL_USER = 'root'  # نام کاربری MySQL
-MYSQL_PASSWORD = 'Mani5530'  # رمز عبور MySQL
+MYSQL_HOST = 'localhost'  
+MYSQL_DATABASE = 'bookstore_scraper'  
+MYSQL_USER = 'root'  
+MYSQL_PASSWORD = 'Mani5530'  
 
-CONCURRENT_REQUESTS = 16  # تعداد درخواست‌های همزمان
-DOWNLOAD_DELAY = 1  # فاصله زمانی بین درخواست‌ها (در ثانیه)
+CONCURRENT_REQUESTS = 16  
+DOWNLOAD_DELAY = 1  

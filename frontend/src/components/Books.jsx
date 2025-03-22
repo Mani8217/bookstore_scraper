@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import './book.scss'
 function Book() {
   const [books, setBooks] = useState([]);
 
@@ -17,17 +17,20 @@ function Book() {
 
   return (
     <div className="App">
-      <h1>Book List</h1>
+      <h1 className='list-title'>Book List</h1>
       <ul>
         {books.length > 0 ? (
+          
           books.map(book => (
             <div className="book-container" key={book.id}>
               <li>
-                <img src={`http://127.0.0.1:8000/${book.image}`} alt={book.name} />
-                {book.name} - {book.price}
+                <img src={`https://books.toscrape.com/${book.image}`} alt={book.name} />
+                <p>{book.name} </p>
+                <p>{book.price}</p>
               </li>
             </div>
           ))
+          
         ) : (
           <p>No books available</p>
         )}

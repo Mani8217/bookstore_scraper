@@ -1,0 +1,32 @@
+.book-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+
+
+        img {
+            width: 50vh;
+        }
+
+        p {
+            padding: 5px;
+            margin: 0;
+        }
+
+    }
+}
+
+.list-title {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

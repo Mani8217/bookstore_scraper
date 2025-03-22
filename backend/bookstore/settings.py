@@ -106,7 +106,7 @@ WSGI_APPLICATION = 'bookstore.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'bookstore_scraper',
+        'NAME':'books_scraping',
         'USER':'root',
         'PASSWORD':'Mani5530',
         'HOST':'localhost',

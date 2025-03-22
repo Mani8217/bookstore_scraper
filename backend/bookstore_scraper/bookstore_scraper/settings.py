@@ -96,7 +96,7 @@ ITEM_PIPELINES = {
 }
 
 MYSQL_HOST = 'localhost'  
-MYSQL_DATABASE = 'bookstore_scraper'  
+MYSQL_DATABASE = 'books_scraping'  
 MYSQL_USER = 'root'  
 MYSQL_PASSWORD = 'Mani5530'  
 

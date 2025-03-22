@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './book.scss'
+import { Link } from 'react-router-dom';
 function Book() {
   const [books, setBooks] = useState([]);
 
@@ -20,17 +21,19 @@ function Book() {
       <h1 className='list-title'>Book List</h1>
       <ul>
         {books.length > 0 ? (
-          
+
           books.map(book => (
             <div className="book-container" key={book.id}>
               <li>
-                <img src={`https://books.toscrape.com/${book.image}`} alt={book.name} />
-                <p>{book.name} </p>
-                <p>{book.price}</p>
+                <Link to={book.url}>
+                  <img src={`https://books.toscrape.com/${book.image}`} alt={book.name} />
+                  <p>{book.name} </p>
+                  <p>{book.price}</p>
+                </Link>
               </li>
             </div>
           ))
-          
+
         ) : (
           <p>No books available</p>
         )}

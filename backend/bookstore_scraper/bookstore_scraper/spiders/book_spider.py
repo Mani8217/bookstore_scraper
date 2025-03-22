@@ -15,10 +15,15 @@ class BookSpider(scrapy.Spider):
             price = re.sub(r'[^\d\.]', '', price)  
             price = float(price)
 
+
+            relative_url = book.css('h3 a::attr(href)').get()
+            full_url = response.urljoin(relative_url)  
             yield {
                 'image': book.css('img::attr(src)').get(),
                 'name': book.css('h3 a::attr(title)').get(),
-                'price': price
+                'price': price,
+                "url": response.urljoin(book.css("h3 a::attr(href)").get()),
+
             }
 
         next_page = response.css('li.next a::attr(href)').get()

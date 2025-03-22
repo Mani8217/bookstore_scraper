@@ -6,7 +6,7 @@ class MySQLPipeline:
     def open_spider(self, spider):
         self.conn = mysql.connector.connect(
             host='localhost',
-            database='bookstore_scraper',
+            database='books_scraping',
             user='root',
             password='Mani5530'
         )
@@ -18,9 +18,8 @@ class MySQLPipeline:
         self.conn.close()
 
     def process_item(self, item, spider):
-        # ذخیره اطلاعات در دیتابیس
         self.cursor.execute("""
-            INSERT INTO books (image, name, price) 
-            VALUES (%s, %s, %s)
-        """, (item['image'], item['name'], item['price']))
+            INSERT INTO books (image, name, price, url) 
+            VALUES (%s, %s, %s, %s)
+        """, (item['image'], item['name'], item['price'],item['url']))
         return item

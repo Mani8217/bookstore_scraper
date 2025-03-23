@@ -15,7 +15,7 @@ frontend/       # React project (Displays books)
 ```
 
 ## Diagram Of The project
-
+<img src="./assets/projIII_mreza_shidfar.jpg" alt="diagram of the project" width="200" height="200">
 
 ## Technologies Used
 

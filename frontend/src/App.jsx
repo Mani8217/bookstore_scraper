@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
-
+import Gallery from './pages/Gallery';
 import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
 
@@ -21,6 +21,7 @@ function App() {
           <Route path='/' element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />} ></Route>
+          <Route path='/gallery' element={<Gallery />}></Route>
          </Routes>
          
       </div>
